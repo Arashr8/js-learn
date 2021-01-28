@@ -1,4 +1,11 @@
-let fruits = ['orange', 'apple ', 'chery', 'annanas']
-console.log(fruits.length);
-console.log(fruits.sort());
-console.log(typeof fruits);
+/* let obj = new Object() */
+/* let obj2 = {} */
+/* console.log(obj);
+console.log(obj2); */
+
+
+let animal = new Object()
+animal.color = 'red';
+animal.age = 30;
+console.log(animal.color);
+console.log(animal.age);
