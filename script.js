@@ -9,3 +9,8 @@ animal.color = 'red';
 animal.age = 30;
 console.log(animal.color);
 console.log(animal.age);
+
+animal.makeNoise = function() {
+    console.log('noissse');
+}
+animal.makeNoise()
