@@ -1,16 +1,16 @@
-/* let obj = new Object() */
-/* let obj2 = {} */
-/* console.log(obj);
-console.log(obj2); */
-
-
-let animal = new Object()
-animal.color = 'red';
-animal.age = 30;
-console.log(animal.color);
-console.log(animal.age);
-
-animal.makeNoise = function() {
-    console.log('noissse');
+let car = new Object()
+car.speed = 100;
+car.name = 'benz';
+car.year = 2000;
+car.start = function() {
+    console.log('started');
 }
-animal.makeNoise()
+car.break = function() {
+    console.log('slow');
+}
+console.log('speed is ' + car.speed);
+console.log('name is ' + car.name);
+console.log('year is ' + car.year);
+
+car.start()
+car.break()
