@@ -6,5 +6,6 @@ const person = {
     }
 };
 
-console.log('fname' in person);
-console.log('family' in person);
+console.log(person);
+delete person.lname
+console.log(person);
