@@ -5,9 +5,6 @@ const person = {
         console.log('bekhab');
     }
 };
-/* for (let key in person) {
-    console.log(person[key]);
 
-} */
-console.log(person.fname == undefined);
-console.log(person.family == undefined);
+console.log('fname' in person);
+console.log('family' in person);
