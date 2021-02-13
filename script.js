@@ -1,15 +1,17 @@
-function creatCar(color, maxSpeed) {
-    return {
-        color,
-        maxSpeed,
-        stop() {
-            console.log(stop);
+let person = {
+    fname: 'kaveh',
+    lname: 'mirzaie',
+    sleep() {
+        console.log('bekhab');
+    },
+    jobb: {
+        jobbName: 'worker',
+        salary: 1000,
+        welcome() {
+            console.log('hi')
         }
+
     }
-
-}
-let car1 = creatCar('black', 300)
-let car2 = creatCar('red', 200)
-
-console.log(car1);
-console.log(car2);
+};
+console.log(person.jobb.salary);
+(person.jobb.welcome());
