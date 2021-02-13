@@ -1,33 +1,15 @@
-/* let a = 20
-let b = a
-b = 50
-console.log(a);
-console.log(b); */
-/* 
-let a = {
-    m: 10,
-    n: 20,
-};
-let b = a
-b.m = 40
-console.log(a.m);
-console.log(b.m); */
+function creatCar(color, maxSpeed) {
+    return {
+        color,
+        maxSpeed,
+        stop() {
+            console.log(stop);
+        }
+    }
 
-/* let a = {
-    m: 10,
-    n: 20,
-};
-let b = Object.assign({}, a)
-b.m = 40
-console.log(a.m);
-console.log(b.m); */
+}
+let car1 = creatCar('black', 300)
+let car2 = creatCar('red', 200)
 
-let a = {
-    m: 10,
-    n: 20,
-};
-
-let b = {...a }
-b.m = 40
-console.log(a.m);
-console.log(b.m);
+console.log(car1);
+console.log(car2);
