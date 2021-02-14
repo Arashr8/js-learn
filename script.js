@@ -1,17 +1,8 @@
-let person = {
-    fname: 'kaveh',
-    lname: 'mirzaie',
-    sleep() {
-        console.log('bekhab');
-    },
-    jobb: {
-        jobbName: 'worker',
-        salary: 1000,
-        welcome() {
-            console.log('hi')
-        }
-
-    }
-};
-console.log(person.jobb.salary);
-(person.jobb.welcome());
+function Car(color, maxSpeed) {
+    this.color = color;
+    this.maxSpeed = maxSpeed;
+}
+let car1 = new Car('red', 200)
+let car2 = new Car('blue', 300)
+console.log(car1);
+console.log(car2);
