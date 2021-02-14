@@ -1,13 +1,15 @@
-function Car(color, maxSpeed) {
-    this.color = color;
-    this.maxSpeed = maxSpeed;
-}
-let car1 = new Car('red', 200)
-let car2 = new Car('blue', 300)
-console.log(car1);
-console.log(car2);
-console.log(typeof car1);
+/* console.log(Math);
 
-console.log(car1 instanceof Car);
-console.log(car1 instanceof Object);
-console.log(car1 instanceof Array);
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.LN2); */
+
+console.log(Math.round(4.8));
+console.log(Math.pow(3, 2));
+console.log(Math.sqrt(64));
+console.log(Math.abs(-5));
+console.log(Math.ceil(4.4));
+console.log(Math.floor(4.7));
+console.log(Math.min(4, 8, 10, -3));
+console.log(Math.max(4, 8, 10, -3));
+console.log(Math.floor(Math.random() * 101));
