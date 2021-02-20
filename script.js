@@ -1,6 +1,8 @@
-let a = document.querySelector('#heading')
-let b = document.querySelector('.p1')
-let c = document.querySelectorAll('.p1')
-console.log(c);
-console.log(b);
-console.log(a);
+console.log(document.body);
+console.log(document.head);
+console.log(document.forms);
+console.log(document.images);
+console.log(document.links);
+
+let d = document.body.querySelector('.p1')
+console.log(d);
