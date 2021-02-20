@@ -1,2 +1,4 @@
-let p = document.getElementsByTagName('p')
-console.log('there are ' + p.length + ' in this page');
+let b = document.getElementsByTagName('p')
+let c = document.getElementsByClassName('p1')
+console.log(c[0] == b[1]);
+console.log(c[1] == b[1]);
