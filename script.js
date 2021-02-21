@@ -1,8 +1,15 @@
-let heading = document.getElementById('heading')
-    /* console.log(heading.parentNode); */
+let div = document.getElementById('myid')
+console.log(div.getAttribute('class'));
+console.log(div.getAttribute('title'));
+div.setAttribute('title', 'mytitle')
+div.setAttribute('class', 'newclass')
 
-if (heading.parentNode.children.length == 3) {
-    console.log('it is three');
-} else {
-    console.log('it is not three');
-}
+div.removeAttribute('id')
+console.log(div.getAttribute('id'));
+console.log(div.id);
+console.log(div.className);
+console.log(div.myattr);
+console.log(div.getAttribute('myattr'));
+div.newattr = 'newvalue'
+console.log(div.getAttribute('newattr'));
+console.log(div.newattr);
