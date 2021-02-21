@@ -1,5 +1,8 @@
 let heading = document.getElementById('heading')
-console.log(heading.nextSibling);
-console.log(heading.nextElementSibling.nodeName);
-console.log(heading.previousSibling);
-console.log(heading.previousElementSibling);
+    /* console.log(heading.parentNode); */
+
+if (heading.parentNode.children.length == 3) {
+    console.log('it is three');
+} else {
+    console.log('it is not three');
+}
