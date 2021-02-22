@@ -1,14 +1,15 @@
-let div = document.getElementById('user')
-    /* div.className = 'one two three four' */
-div.classList.add('four')
-    /* console.log(div.classList);
-    div.classList.remove('one', 'two')
-    console.log(div.classList);
+let p1 = document.createElement('p')
+let text = document.createTextNode('this is text')
+p1.appendChild(text)
+let main = document.getElementById('main')
+main.appendChild(p1)
 
-    div.classList.toggle('hassan')
-    div.classList.toggle('four') */
+let div = document.createElement('div')
+    /* let textDiv = document.createTextNode('this is div')
+    div.appendChild(textDiv) */
+p1.appendChild(div)
 
-div.classList.replace('one', 'five')
+p1.id = 'firstId'
 
-console.log(div.classList.contains('three'));
-console.log(div.classList.contains('seven'));
+div.textContent = 'this is div'
+div.textContent = '<a>link</a>'
