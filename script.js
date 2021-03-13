@@ -1,15 +1,24 @@
-let p1 = document.createElement('p')
-let text = document.createTextNode('this is text')
-p1.appendChild(text)
+function createElement(tag, text) {
+    let element = document.createElement(tag)
+    element.textContent = text
+    return element
+}
+/* let main = document.getElementById('main')
+let h3 = createElement('h3', 'hello')
+let h4 = createElement('h4', 'salam h4')
+main.appendChild(h3)
+main.appendChild(h4) */
+
 let main = document.getElementById('main')
-main.appendChild(p1)
-
-let div = document.createElement('div')
-    /* let textDiv = document.createTextNode('this is div')
-    div.appendChild(textDiv) */
-p1.appendChild(div)
-
-p1.id = 'firstId'
-
-div.textContent = 'this is div'
-div.textContent = '<a>link</a>'
+let heading = createElement('h1', 'list of fruits')
+let ul = createElement('ul', '')
+let li = createElement('li', 'apple')
+let li2 = createElement('li', 'orange')
+let li3 = createElement('li', 'banana')
+let li4 = createElement('li', 'cherry')
+ul.appendChild(li)
+ul.appendChild(li2)
+ul.appendChild(li3)
+ul.appendChild(li4)
+main.appendChild(heading)
+main.appendChild(ul)
