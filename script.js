@@ -3,7 +3,11 @@ function createElement(tag, text) {
     element.textContent = text
     return element
 }
-let main = document.getElementById('main')
+
 let ul = document.querySelector('ul')
-let p = createElement('p', 'this is p tag')
-main.insertBefore(p, ul)
+let second = ul.firstElementChild.nextElementSibling
+    /* console.log(second); */
+
+let removed = ul.removeChild(second)
+console.log(removed);
+ul.appendChild(removed)
