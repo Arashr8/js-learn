@@ -1,6 +1,4 @@
 let ul = document.querySelector('ul')
-console.log(ul.innerHTML);
+console.log(ul.outerHTML);
 
-let newItems = `<li>ananas</li>
- <li>Sallad</li>`
-ul.innerHTML += newItems
+ul.outerHTML = `<ul><li>water</li></ul>`
