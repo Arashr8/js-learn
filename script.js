@@ -1,4 +1,9 @@
 let ul = document.querySelector('ul')
-console.log(ul.outerHTML);
+    /* ul.style.color = 'blue'
+    ul.style.fontSize = '30px'
+    ul.style.backgroundColor = 'red' */
 
-ul.outerHTML = `<ul><li>water</li></ul>`
+ul.style['font-size'] = '30px'
+ul.classList.add('border')
+    /* ul.classList.add('red') */
+ul.classList.toggle('red')
