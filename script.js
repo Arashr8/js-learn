@@ -1,9 +1,8 @@
 let ul = document.querySelector('ul')
-    /* ul.style.color = 'blue'
-    ul.style.fontSize = '30px'
-    ul.style.backgroundColor = 'red' */
+    /* console.log(ul.style.color);
+    console.log(ul.style.border); */
 
-ul.style['font-size'] = '30px'
-ul.classList.add('border')
-    /* ul.classList.add('red') */
-ul.classList.toggle('red')
+let styles = getComputedStyle(ul)
+console.log(styles.getPropertyValue('color'));
+console.log(styles.getPropertyValue('font-size'));
+console.log(styles.getPropertyValue('width'));
