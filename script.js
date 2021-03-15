@@ -1,2 +1,6 @@
-let text = document.querySelector('p')
-text.textContent = 'hello'
+let btn = document.querySelector('button')
+btn.addEventListener('click', handler)
+
+function handler() {
+    console.log('salam');
+}
