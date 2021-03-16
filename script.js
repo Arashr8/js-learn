@@ -1,5 +1,3 @@
 let btn = document.querySelector('button')
 
-btn.onclick = function() {
-    alert('salam')
-}
+btn.addEventListener('click', () => alert('salam'))
