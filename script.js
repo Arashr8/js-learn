@@ -1,6 +1,18 @@
 const main = document.getElementById('main');
-const button = document.querySelector('button');
-const message = document.getElementById('message');
+main.addEventListener('click', handler)
 
-
-button.addEventListener('contextmenu', () => console.log('salam'))
+function handler(event) {
+    console.log(event.type);
+    console.log(event.target.nodeName);
+    /*  console.log(event.clientX);
+     console.log(event.clientY); */
+    /* console.log(event.offsetX);
+    console.log(event.offsetY); */
+    /* console.log(event.pageX);
+    console.log(event.pageY); */
+    /* console.log(event.screenX);
+    console.log(event.screenY); */
+    console.log(event.altKey);
+    console.log(event.ctrlKey);
+    console.log(event.shiftKey);
+}
