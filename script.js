@@ -1,12 +1,8 @@
-const outer = document.getElementById('outer');
-/* outer.addEventListener('click', handler) */
-/* outer.addEventListener('mouseover', handler) */
-/* outer.addEventListener('mouseout', handler) */
-/* outer.addEventListener('mouseenter', handler)
- */
-/* outer.addEventListener('mouseleave', handler)*/
-outer.addEventListener('mousemove', handler)
+let circle = document.getElementById('outer')
+circle.addEventListener('mouseenter', handler)
 
-function handler(event) {
-    console.log(event.type);
+function handler() {
+    let body = document.querySelector('body')
+    body.classList.add('bg-red')
+    alert('warning')
 }
