@@ -1,17 +1,10 @@
-const main = document.getElementById('main')
-const body = document.body
-main.addEventListener('click', divHandler);
-/* body.addEventListener('click', bodyHandler, true);
- */
-body.addEventListener('click', bodyHandler);
+ /* const main = document.getElementById('main')
+  const body = document.body
+
+  main.addEventListener('click', handler) */
 
 
-function divHandler(event) {
-    console.log('i am divHandler');
-    event.stopPropagation()
-}
-
-function bodyHandler(event) {
-    console.log('i am bodyHandler');
-
-}
+ function handler(event) {
+     console.log(event.currentTarget.nodeName);
+     console.log(event.eventPhase);
+ }
