@@ -1,18 +1,14 @@
 const input = document.querySelector('input')
-    /* input.addEventListener('keydown', handler)
-     */
-    /* input.addEventListener('keyup', handler)
-     */
-input.addEventListener('keypress', handler)
+
+input.addEventListener('keydown', handler)
 
 function handler(event) {
-    console.log(event.keyCode);
-    console.log(event.charCode);
+    /* console.log(event.altKey);
+    console.log(event.ctrlKey);
+    console.log(event.shiftKey); */
+    /*     console.log(event.repeat);
+     */
+    /*     console.log(event.code);
 
-
-    if (event.keyCode == 104) {
-        alert('hello')
-    } else if (event.keyCode == 98) {
-        alert('bye')
-    }
+     */
 }
