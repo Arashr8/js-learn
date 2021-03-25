@@ -1,7 +1,17 @@
 const main = document.getElementById('main')
-main.addEventListener('touchmove', handler);
+const body = document.body
+main.addEventListener('click', divHandler);
+/* body.addEventListener('click', bodyHandler, true);
+ */
+body.addEventListener('click', bodyHandler);
 
-function handler(event) {
-    console.log(event.touches.length);
+
+function divHandler(event) {
+    console.log('i am divHandler');
+    event.stopPropagation()
+}
+
+function bodyHandler(event) {
+    console.log('i am bodyHandler');
 
 }
