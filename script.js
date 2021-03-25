@@ -1,10 +1,7 @@
-const input = document.querySelector('input')
-
-input.addEventListener('keydown', handler)
+const main = document.getElementById('main')
+main.addEventListener('touchmove', handler);
 
 function handler(event) {
-    if (event.code == 'KeyC' && event.ctrlKey) {
-        alert('you have copied this text ')
-    }
+    console.log(event.touches.length);
 
 }
