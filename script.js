@@ -1,10 +1,9 @@
- /* const main = document.getElementById('main')
-  const body = document.body
+const button = document.querySelector('button')
+const input = document.querySelector('input')
 
-  main.addEventListener('click', handler) */
+button.addEventListener('click', buttonHandler)
 
-
- function handler(event) {
-     console.log(event.currentTarget.nodeName);
-     console.log(event.eventPhase);
- }
+function buttonHandler() {
+    console.log('i am buttonHandler');
+    button.removeEventListener('click', buttonHandler)
+}
