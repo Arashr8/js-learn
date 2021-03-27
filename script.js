@@ -1,8 +1,5 @@
-const button = document.querySelector('button')
-const input = document.querySelector('input')
+document.addEventListener('contextmenu', handler)
 
-input.addEventListener('keypress', inputHandler)
-
-function inputHandler(event) {
+function handler(event) {
     event.preventDefault()
 }
