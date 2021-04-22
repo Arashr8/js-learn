@@ -1,20 +1,27 @@
-const componentA = document.querySelector("#componenet_a")
-const componentB = document.querySelector("#componenet_b")
+let count = 0
+const btnDecrease = document.querySelector('.decrease')
+const btnReset = document.querySelector('.reset')
+const btnIncrease = document.querySelector('.increase')
 
-const btnA = document.querySelector("#btn_a")
-const btnB = document.querySelector("#btn_b")
+let number = document.querySelector('.number')
 
-btnA.addEventListener('click', handelColorA)
+btnIncrease.addEventListener('click', increase)
 
-function handelColorA() {
-    componentA.classList.add('pink')
-    componentB.classList.remove('pink')
+function increase() {
+    count++
+    number.textContent = count
 }
 
+btnReset.addEventListener('click', reset)
 
-btnB.addEventListener('click', handelColorB)
+function reset() {
+    count = 0
+    number.textContent = count
+}
 
-function handelColorB() {
-    componentB.classList.add('pink')
-    componentA.classList.remove('pink')
+btnDecrease.addEventListener('click', decrease)
+
+function decrease() {
+    count--
+    number.textContent = count
 }
