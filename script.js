@@ -8,8 +8,16 @@ let number = document.querySelector('.number')
 btnIncrease.addEventListener('click', increase)
 
 function increase() {
+
     count++
     number.textContent = count
+
+    if (count >= 0) {
+        number.style.color = 'green'
+    } else {
+        number.style.color = 'red'
+    }
+
 }
 
 btnReset.addEventListener('click', reset)
@@ -22,6 +30,15 @@ function reset() {
 btnDecrease.addEventListener('click', decrease)
 
 function decrease() {
+
     count--
     number.textContent = count
+
+
+    if (count >= 0) {
+        number.style.color = 'green'
+    } else {
+        number.style.color = 'red'
+    }
+
 }
