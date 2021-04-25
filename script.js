@@ -1,7 +1,6 @@
 const button = document.getElementById('btn')
-button.addEventListener('click', duplicate)
+button.addEventListener('click', () => {
 
-function duplicate() {
     const input = document.getElementById('mytxt')
     input.value += input.value
-}
+})
