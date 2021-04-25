@@ -1,44 +1,29 @@
-let count = 0
-const btnDecrease = document.querySelector('.decrease')
-const btnReset = document.querySelector('.reset')
-const btnIncrease = document.querySelector('.increase')
+/* let myForm = document.forms[0]
+console.log(myForm); */
 
-let number = document.querySelector('.number')
-
-btnIncrease.addEventListener('click', increase)
-
-function increase() {
-
-    count++
-    number.textContent = count
-
-    if (count >= 0) {
-        number.style.color = 'green'
-    } else {
-        number.style.color = 'red'
-    }
-
-}
-
-btnReset.addEventListener('click', reset)
-
-function reset() {
-    count = 0
-    number.textContent = count
-}
-
-btnDecrease.addEventListener('click', decrease)
-
-function decrease() {
-
-    count--
-    number.textContent = count
+/* let myForm = document.getElementsByTagName('form')[0]
+console.log(myForm); */
 
 
-    if (count >= 0) {
-        number.style.color = 'green'
-    } else {
-        number.style.color = 'red'
-    }
 
-}
+let myForm = document.forms.search
+    /* console.log(myForm); */
+    /* 
+    let myInput = myForm.mytxt
+    console.log(myInput);
+
+    let myButton = myForm.btn
+    console.log(myButton); */
+
+
+/* console.log(myForm.action);
+console.log(myForm.method);
+console.log(myForm.leng); */
+
+let myInput = myForm.mytxt
+myInput.required = true
+myInput.readOnly = true
+myInput.disabled = true
+
+let myButton = myForm.btn
+myButton.disabled = true
