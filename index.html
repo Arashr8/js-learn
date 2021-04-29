@@ -24,6 +24,10 @@
             color: darkblue;
             font-size: 35px;
         }
+        
+        span {
+            color: red;
+        }
     </style>
 </head>
 
@@ -31,12 +35,18 @@
 
     <div>
         <form name="search">
-            <input type="text" id="firstName" value="Ali"><label>first Name</label><br>
-            <input type="text" id="lastName"><label>Last Name</label><br>
+            <input type="text" id="firstName"><label>first Name</label><br>
+            <input type="checkbox" id="check"><label>Last Name</label><br>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+            <select name="" id="select">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
 
 
             <button type="button">select</button>
-
+            <span></span>
         </form>
 
 
