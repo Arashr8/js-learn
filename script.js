@@ -1,11 +1,10 @@
 const form = document.querySelector('form')
-form.addEventListener('submit', (event) => {
-    console.log('salam');
-    event.preventDefault()
-})
+const button = document.querySelector('button')
 
+/* button.addEventListener('click', () => {
+    form.submit()
+}) */
 
-form.addEventListener('reset', (event) => {
-    console.log('reset');
-
+button.addEventListener('click', () => {
+    form.reset()
 })
