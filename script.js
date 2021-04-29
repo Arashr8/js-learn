@@ -1,25 +1,11 @@
-const firstName = document.getElementById('firstName')
-const check = document.getElementById('check')
-const textarea = document.getElementById('textarea')
-const select = document.getElementById('select')
-
-
-
-
-firstName.addEventListener('change', () => {
+const form = document.querySelector('form')
+form.addEventListener('submit', (event) => {
     console.log('salam');
+    event.preventDefault()
 })
 
 
-check.addEventListener('change', () => {
-    console.log('salam');
-})
+form.addEventListener('reset', (event) => {
+    console.log('reset');
 
-textarea.addEventListener('change', () => {
-    console.log('salam');
-})
-
-select.addEventListener('change', () => {
-    const span = document.querySelector('span')
-    span.innerHTML = 'changed!!'
 })
