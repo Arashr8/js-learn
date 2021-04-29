@@ -1,6 +1,7 @@
-const button = document.getElementById('btn')
-button.addEventListener('click', () => {
-
-    const input = document.getElementById('mytxt')
-    input.value += input.value
+const firstName = document.getElementById('firstName')
+firstName.addEventListener('focus', (event) => {
+    event.target.select()
 })
+
+const lastName = document.getElementById('lastName')
+lastName.focus()
