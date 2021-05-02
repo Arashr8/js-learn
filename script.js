@@ -18,7 +18,7 @@ form.addEventListener('submit', (event) => {
     }
 
     let age = document.getElementById('age')
-    if (!Number.isInteger(Number(age.value))) {
+    if (!Number.isInteger(Number(age.value)) && (age.value < 1 || age.value > 100)) {
         event.preventDefault()
         alert('not valid')
     }
