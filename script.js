@@ -5,7 +5,7 @@ form.addEventListener('submit', (event) => {
 
     if (userName.value.length < 5 || userName.value.length > 15) {
         event.preventDefault()
-        alert('Error')
+        alert('Username Error')
 
 
     }
@@ -15,6 +15,12 @@ form.addEventListener('submit', (event) => {
         event.preventDefault()
         alert('Password most be 8 character')
 
+    }
+
+    let age = document.getElementById('age')
+    if (!Number.isInteger(Number(age.value))) {
+        event.preventDefault()
+        alert('not valid')
     }
 
 
