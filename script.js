@@ -1,10 +1,9 @@
 const form = document.querySelector('form')
-const button = document.querySelector('button')
 
-/* button.addEventListener('click', () => {
-    form.submit()
-}) */
-
-button.addEventListener('click', () => {
-    form.reset()
+form.addEventListener('submit', (event) => {
+    let input = document.querySelector('input')
+    if (input.value.length <= 0) {
+        alert('empty')
+        event.preventDefault()
+    }
 })
