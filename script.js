@@ -1,17 +1,8 @@
-const set = document.getElementById('set');
-const clear = document.getElementById('clear');
-const text = document.querySelector('p')
-let count = 0;
-let timer
+let square = document.getElementById('square');
+let angle = 0;
 
-set.addEventListener('click', () => {
-    timer = setInterval(() => {
-        count++
-        text.innerHTML = count;
-    }, 1000)
+setInterval(() => {
 
-})
-
-clear.addEventListener('click', () => {
-    clearInterval(timer);
-})
+    angle += 1
+    square.style.transform = `rotate(${angle}deg)`;
+}, 20);
