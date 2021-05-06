@@ -1,12 +1,19 @@
-const button = document.querySelector('button');
-button.addEventListener('click', () => {
-    print()
+const once = document.getElementById('once');
+const repeat = document.getElementById('repeat');
+
+once.addEventListener('click', () => {
+    setTimeout(() => {
+        alert('Hi')
+
+    }, 3000);
 })
 
-window.addEventListener('beforeprint', () => {
-    button.style.display = 'none'
+
+repeat.addEventListener('click', () => {
+    setTimeout(myfunc, 2000);
 })
 
-window.addEventListener('afterprint', () => {
-    button.style.display = 'inline-block'
-})
+function myfunc() {
+    alert('Hi')
+    setTimeout(myfunc, 2000);
+}
