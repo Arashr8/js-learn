@@ -1,19 +1,17 @@
-const once = document.getElementById('once');
-const repeat = document.getElementById('repeat');
+const set = document.getElementById('set');
+const clear = document.getElementById('clear');
+const text = document.querySelector('p')
+let count = 0;
+let timer
 
-once.addEventListener('click', () => {
-    setTimeout(() => {
-        alert('Hi')
+set.addEventListener('click', () => {
+    timer = setInterval(() => {
+        count++
+        text.innerHTML = count;
+    }, 1000)
 
-    }, 3000);
 })
 
-
-repeat.addEventListener('click', () => {
-    setTimeout(myfunc, 2000);
+clear.addEventListener('click', () => {
+    clearInterval(timer);
 })
-
-function myfunc() {
-    alert('Hi')
-    setTimeout(myfunc, 2000);
-}
