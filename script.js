@@ -1,13 +1,24 @@
-const agent = document.getElementById('agent');
-const details = document.getElementById('details');
+const total = document.getElementById('total');
+const available = document.getElementById('available');
+const browser = document.getElementById('browser');
+const viewport = document.getElementById('viewport');
 
-agent.addEventListener('click', () => {
-    console.log(navigator.userAgent);
+total.addEventListener('click', () => {
+    console.log(screen.width);
+    console.log(screen.height);
 })
 
-details.addEventListener('click', () => {
-    console.log(navigator.cookieEnabled);
-    console.log(navigator.language);
-    console.log(navigator.onLine);
-    console.log(navigator.platform);
+available.addEventListener('click', () => {
+    console.log(screen.availWidth);
+    console.log(screen.availHeight);
+})
+
+browser.addEventListener('click', () => {
+    console.log(window.outerWidth);
+    console.log(window.outerHeight);
+})
+
+viewport.addEventListener('click', () => {
+    console.log(window.innerWidth);
+    console.log(window.innerHeight);
 })
