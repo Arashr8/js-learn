@@ -1,8 +1,17 @@
-let square = document.getElementById('square');
-let angle = 0;
+const back = document.getElementById('back');
+const forward = document.getElementById('forward');
+const go = document.getElementById('go');
 
-setInterval(() => {
+back.addEventListener('click', () => {
+    history.back();
+})
 
-    angle += 1
-    square.style.transform = `rotate(${angle}deg)`;
-}, 20);
+
+forward.addEventListener('click', () => {
+    history.forward();
+})
+
+
+go.addEventListener('click', () => {
+    history.go(2);
+})
