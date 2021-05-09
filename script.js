@@ -1,16 +1,7 @@
-const google = document.getElementById('google');
-const blank = document.getElementById('blank');
-const self = document.getElementById('self');
+const openBtn = document.getElementById('open');
 
+openBtn.addEventListener('click', () => {
+    /* open('http://google.com', '_blank', 'width=300,height=300'); */
 
-google.addEventListener('click', () => {
-    open('https://google.com', 'google')
-})
-
-blank.addEventListener('click', () => {
-    open('https://google.com', '_blank')
-})
-
-self.addEventListener('click', () => {
-    open('https://google.com', '_self')
+    open('http://google.com', '_blank', 'width=300,height=300,left=300,top=200');
 })
