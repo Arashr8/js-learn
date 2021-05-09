@@ -1,7 +1,5 @@
-const openBtn = document.getElementById('open');
+window.addEventListener('click', () => {
 
-openBtn.addEventListener('click', () => {
-    /* open('http://google.com', '_blank', 'width=300,height=300'); */
 
-    open('http://google.com', '_blank', 'width=300,height=300,left=300,top=200');
+    open('http://toplearn.com', '_blank', 'width=500,height=500,left=700,top=500');
 })
