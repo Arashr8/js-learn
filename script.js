@@ -1,10 +1,16 @@
-const openBtn = document.getElementById('open');
-const closeBtn = document.getElementById('close');
-let adress
-openBtn.addEventListener('click', () => {
-    adress = open('https://github.com/');
+const google = document.getElementById('google');
+const blank = document.getElementById('blank');
+const self = document.getElementById('self');
+
+
+google.addEventListener('click', () => {
+    open('https://google.com', 'google')
 })
 
-closeBtn.addEventListener('click', () => {
-    adress.close();
+blank.addEventListener('click', () => {
+    open('https://google.com', '_blank')
+})
+
+self.addEventListener('click', () => {
+    open('https://google.com', '_self')
 })
