@@ -1,20 +1,18 @@
-/* try {
+/* throw 'hassan' */
+/* 
+throw new RangeError('value is too big'); */
 
-    console.log(a);
 
-} catch (e) {
-
-    console.log('error');
+function example(str) {
+    if (typeof str != "string") {
+        throw new TypeError('Input type is wrong!');
+    }
+    console.log('Type is correct.');
 }
-
- */
-
 try {
-
-    const arr = new Array();
-    let size = prompt('enter size')
-    arr.length = size;
+    example(20)
 
 } catch (error) {
-    console.log('addade sahih vared konid');
+
+    console.log(error.message);
 }
