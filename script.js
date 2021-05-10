@@ -1,18 +1,16 @@
-/* let a = 10
-let b = 20
+/* 'use strict'
+a = 5
+console.log(a); */
 
-console.log(a++b); */
+/* function test() {
+    'use strict'
+    b = 5
 
-/* let a = 10
-let a = 20
+}
+test(); */
 
-function a() {
-    console.log('salam');
-} */
+/* function sum(num, num) {
+    return num + num
+}
 
-/* hassan() */
-
-/* const a = [1, 2]
-a.length = -4 */
-
-let a = Math.int(5.5)
+console.log(sum(10, 20)); */
