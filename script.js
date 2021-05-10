@@ -1,15 +1,18 @@
-let username = prompt('نام کاربری خود را وارد کنید');
-if (username == "admin") {
-    console.log('نام کاربری صحیح است');
-} else {
-    console.log('نام کاربری اشتباه است');
-}
+/* let a = 10
+let b = 20
 
-function concat(str1, str2, str3 = '') {
-    let result = str1 + str2;
-    if (str3 !== '') {
-        result += str3;
-    }
-    console.log(result);
-}
-concat('salam', 1, 0);
+console.log(a++b); */
+
+/* let a = 10
+let a = 20
+
+function a() {
+    console.log('salam');
+} */
+
+/* hassan() */
+
+/* const a = [1, 2]
+a.length = -4 */
+
+let a = Math.int(5.5)
