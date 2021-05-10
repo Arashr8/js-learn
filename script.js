@@ -1,16 +1,20 @@
-/* 'use strict'
-a = 5
-console.log(a); */
+/* try {
 
-/* function test() {
-    'use strict'
-    b = 5
+    console.log(a);
 
-}
-test(); */
+} catch (e) {
 
-/* function sum(num, num) {
-    return num + num
+    console.log('error');
 }
 
-console.log(sum(10, 20)); */
+ */
+
+try {
+
+    const arr = new Array();
+    let size = prompt('enter size')
+    arr.length = size;
+
+} catch (error) {
+    console.log('addade sahih vared konid');
+}
