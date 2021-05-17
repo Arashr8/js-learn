@@ -1,39 +1,22 @@
-/* class Car {
+let status = false;
 
-    constractor(color, model) {
-        this.color = colorName;
-        this.model = models;
+let myPromise = new Promise(function(myresolve, myreject) {
+    if (status === true) {
+        setTimeout(function() {
+                myresolve('i love you');
+            },
+            3000
+        )
+    } else {
+        myreject('reject')
     }
-    getColor() { return this.color }
-}
-let bmw = new Car('red', 'bmw');
-let pride = new Car('blue', 'pride');
+})
 
-console.log(pride.getColor); */
-
-class Rectangle {
-    constructor(height, width) {
-            this.height = height;
-            this.width = width;
-        }
-        // Getter
-    get area() {
-            return this.calcArea();
-        }
-        // Method
-    calcArea() {
-        return this.height * this.width;
+myPromise.then(
+    function(value) {
+        console.log(value);
+    },
+    function(err) {
+        console.log(err);
     }
-
-    hi() {
-        return 'salam'
-    }
-}
-
-const circle = new Rectangle(10, 10)
-
-const square = new Rectangle(10, 10);
-
-console.log(square.area);
-console.log(square.hi());
-console.log(circle.hi());
+)
