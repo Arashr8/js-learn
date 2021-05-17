@@ -1,54 +1,39 @@
-/* let str = '    salam         '
-alert(str.trim()) */
+/* class Car {
 
+    constractor(color, model) {
+        this.color = colorName;
+        this.model = models;
+    }
+    getColor() { return this.color }
+}
+let bmw = new Car('red', 'bmw');
+let pride = new Car('blue', 'pride');
 
-/* let arr = 'havij'
-console.log(Array.isArray(arr));
+console.log(pride.getColor); */
 
-let numbers = [2, 3, 4, 5, 10, 11]
-numbers.forEach((number) => {
-    number++
-    console.log(number);
-}) */
-
-/* let numbers = [2, 3, 4, 5, 10, 11] */
-/* let numbers2 = numbers.map((number) => {
-    return number * 2
-})
-
-console.log(numbers2); */
-
-
-/* let numbers = [2, 3, 4, 5, 10, 11]
-let numbers2 = numbers.filter((number) => {
-    return number > 5
-})
-
-console.log(numbers2); */
-
-/* let car = {
-    color: 'red',
-    model: 'bmw',
-    years: 2000,
-    get info() {
-        return this.color + ' ' + this.model + ' ' + this.years;
-    },
-    set year(value) {
-        this.years = value;
+class Rectangle {
+    constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+        // Getter
+    get area() {
+            return this.calcArea();
+        }
+        // Method
+    calcArea() {
+        return this.height * this.width;
     }
 
+    hi() {
+        return 'salam'
+    }
 }
 
-car.year = 2010
-car.year = 2020
+const circle = new Rectangle(10, 10)
 
-console.log(car.info); */
+const square = new Rectangle(10, 10);
 
-/* let str = 'hello \
- world';
-console.log(str); */
-
-let person = {
-    new: 'hassan',
-    name: 'ali'
-}
+console.log(square.area);
+console.log(square.hi());
+console.log(circle.hi());
