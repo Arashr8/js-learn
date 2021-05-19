@@ -1,6 +1,6 @@
-var numbers = [4, 9, 16, 25, 29];
-var first = numbers.find(myFunction);
+let a = 3
+console.log(a ** 2);
 
-function myFunction(value, index, array) {
-    return value > 18;
-}
+let colors = ['red', 'green', 'blue']
+
+console.log(colors.includes('yellow'));
